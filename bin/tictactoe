@@ -21,6 +21,8 @@ def start
 
   elsif num_of_players == "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
+  else
+    puts "invalid input, try again"
   end
   puts "Would like to play again? type Y for yes and N for No."
 
